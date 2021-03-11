@@ -1,0 +1,162 @@
+.details{
+
+    
+    // 图片
+    .imgBox{
+        width: 100%;
+        overflow: hidden;
+        .img{
+            width: 100%;
+            display: block;
+        }
+    }
+
+    // 详情
+    .particularsBox{
+        padding: 10px;
+        background: #fff;
+        position: relative;
+        top: -20px;
+        margin: 0 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    // 商品名称
+    .productNameBox{
+        display: flex;
+    };
+    .ch-name{
+        font-size: 16px;
+        color:#726f6c;
+    }
+    .en-name{
+        color: #9fa4b4 ;
+        font-size: 15px;
+    }
+    // 价格
+    .price{
+        font-weight: bold;
+        color: #1989fa;
+        margin-left: auto;
+        font-size: 16px;
+    }
+    // 配料
+    .burdeningBox{
+        padding: 10px 0;
+        display: flex;
+        >div{
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+
+            &:nth-child(1){
+                color: #726f6c;
+            }
+            &:nth-child(2){
+                display: flex;
+                div{
+                    color: #726f6c;
+                    width: 100px;
+                    height: 30px;
+                    text-align: center;
+                    line-height: 30px;
+                    background: #ccc;
+                    &.active{
+                        background:  #1989fa;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .count-box{
+        margin-top: 5px;
+        border-top: 1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8;
+        padding: 20px 0;
+        display: flex;
+    }
+    
+      .select-count{
+        font-size: 14px;
+        color: #999;
+      }
+    
+      .count{
+        margin-left: auto;
+      }
+    
+      /deep/ .van-stepper--round .van-stepper__plus{
+        background-color: #1989fa;
+      }
+    
+      /deep/ .van-stepper--round .van-stepper__minus{
+        color:#1989fa;
+        border-color: #1989fa;
+      }
+      .rules{
+        margin-top: 30px;
+      }
+    
+      .rule{
+        display: flex;
+        margin-bottom: 10px;
+      }
+    
+      .rule-title{
+        width: 50px;
+        height: 26px;
+        line-height: 26px;
+        font-size: 14px;
+      }
+    
+      .rule-items{
+        display: flex;
+        >div{
+          width: 60px;
+          text-align: center;
+          height: 26px;
+          line-height: 26px;
+          background-color: #e8e8e8;
+          border-radius: 13px;
+          color: #666;
+          margin-right: 10px;
+          font-size: 12px;
+          &:last-child{
+            margin-right: 0;
+          }
+          &.active{
+            background-color: #1989fa;
+            color: #fff;
+          }
+        }
+      }
+    
+      .desc{
+        margin-top: 30px;
+      }
+    
+      .desc-title{
+        font-size: 14px;
+        color: #666;
+      }
+    
+      .desc-text{
+        margin-top: 10px;
+        font-size: 12px;
+        color: #999;
+        >div{
+          margin-bottom: 10px;
+          &:last-child{
+            margin-bottom: 0;
+          }
+          &.active{
+              color: #fff;
+              background: #1989fa;
+          }
+        }
+      }
+}

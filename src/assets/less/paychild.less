@@ -1,0 +1,75 @@
+.paychild{
+    margin-bottom: 10px;
+    padding-top: 20px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    .pay-title{
+        font-size: 14px;
+        color: #666;
+    }
+    .middle{
+        margin-bottom: 20px;
+    }
+    .foot-line{
+        border-bottom: 1px dotted #ccc;
+        position: relative;
+        margin-bottom: 10px;
+
+        div{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #e6e6e6;
+            border-radius: 50%;
+
+            &:nth-child(1){
+                top: -10px;
+                left: -20px;
+            }
+            &:nth-child(2){
+                top: -10px;
+                right: -20px;
+            }
+        }
+       
+    }
+    .paychild , .account-box{
+       padding-bottom: 30px;
+        
+    }
+
+
+    .total-box{
+
+        position: relative;
+    }
+    .time{
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 10px;
+    }
+    .account-box{
+        display: flex;
+        font-size: 14px;
+        color: #666;
+        font-weight: bold;
+
+        >div:nth-child(2){
+            margin-left: auto;
+            color: #046cab;
+        }
+    }
+
+    .footing::before{
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -10px;
+        left: -20px;
+        width: 115%;
+        height: 10px;
+        background: #e6e6e6;
+    }
+   
+}

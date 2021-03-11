@@ -1,0 +1,85 @@
+.my{
+    .my-bg{
+        height: 200px;
+        background: #fff;
+        // background: url('../img/u=38256228\,3235987781&fm=26&gp=0.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /deep/ .van-uploader{
+        display: block;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+
+    /deep/ .van-uploader__wrapper{
+     
+        height: 100%;
+    }
+    /deep/ .van-uploader__upload{
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .content-box{
+        padding: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        position: relative;
+        top: -40px;
+        margin: 0 10px;
+        background-image: linear-gradient(to bottom , rgba(255,255,255,.65) 0px ,rgba(255,255,255,.65) 40px, #fff 40px);
+    }
+    .my-portrait{
+        display: flex;
+    }
+    .portrait{
+        width: 60px;
+        height: 60px;
+        background: #fff;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 10px;
+        position: relative;
+        
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+    .up-img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .my-text{
+        width:calc(100% - 70px);
+    }
+    .name-box{
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+        color: blue;
+        font-weight: bold;
+    }
+    .synopsis{
+        font-size: 14px;
+        color: #666;
+        line-height: 30px;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+    }
+    .my-list{
+        margin-top: 60px;
+    }
+    /deep/ .van-cell{
+        padding: 10px 0;
+    }
+}

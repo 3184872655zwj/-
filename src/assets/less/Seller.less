@@ -1,0 +1,65 @@
+.seller{
+
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    .article{
+        width:calc(50% - 5px);
+        background: white;
+        margin-right: 10px;
+        padding:10px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        position: relative;
+        border-radius: 10px;
+    }
+
+    .article:nth-child(2n){
+       
+        margin-right: 0;
+    }
+    // 图片盒子
+    .imgBox{
+        width: 100%;
+        margin-bottom: 10px;
+        img{
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+
+        }
+    }
+
+    .seller_name{
+        color:#726f6c;
+        font-size: 16px;
+    }
+    .seller_nameII{
+        color:#9fa4b4 ;
+        margin-bottom: 10px;
+    }
+
+    // 价格
+    .priceBox{
+        .price{
+            font-size: 16px;
+            font-weight: bold;
+            color: #046cab;
+        }
+    }
+    // 热卖
+    .sellerBottom{
+        width: 30px;
+        height: 40px;
+        color:#fff;
+        text-align: center;
+        line-height: 40px;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        background: #046cab;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}

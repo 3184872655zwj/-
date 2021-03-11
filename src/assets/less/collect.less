@@ -1,0 +1,66 @@
+.collect{
+    padding: 5px;
+    padding-top: 50px;
+    .box{
+        background: #fff;
+        padding: 10px;
+        border-radius: 5px;
+
+    }
+    .commodity-box{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .img-box{
+        flex: 2;
+        height: 65px;
+        background: #000;
+        margin-right: 10px;
+
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+    .name-box{
+        flex: 5;
+        padding-top: 5px;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+    }
+    .z-name{
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 10px;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+    }
+    .e-name{
+        font-size: 14px;
+        color: #888;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+    }
+    .price-box{
+        flex: 3;
+        display: flex;
+        
+    }
+    .pcice{
+        flex: 1;
+        margin-right: 20px;
+        color: #046cab;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .remove{
+        flex: 1;
+        
+    }
+    /deep/ .van-icon-delete-o::before {
+        font-size: 20px;
+    }
+}

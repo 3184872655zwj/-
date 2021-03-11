@@ -1,0 +1,84 @@
+
+.home{
+    // padding-top: 46px;
+    // 导航栏
+    /deep/.van-nav-bar van-hairline--bottom{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .content{
+
+        padding: 10px;
+
+    }
+    .top{
+        position: absolute;
+        top: 0px;
+    }
+    .home-title{
+        color:646566 ;
+        display: flex;
+    }
+    .username{
+        max-width: 60px;
+        color:#046cab;
+        overflow:hidden; //超出的文本隐藏
+        text-overflow:ellipsis; //溢出用省略号显示
+        white-space:nowrap; //溢出不换行
+        margin-left: 5px;
+    }
+  
+    /deep/ .van-search{
+        padding: 0 ;
+    }
+
+    //   轮播
+    .bannerBox{
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+    }
+    .my-swipe .van-swipe-item {
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        background-color: #046cab;
+    }
+    .my-swipe{
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+    .merchandiseName{
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        color:white;
+        line-height: 50px;
+        text-shadow: 1px 1px 3px black;
+    }
+
+
+    // 热卖
+    .bestBox{
+        height: 50px;
+        background: white;
+        margin: 10px 0;
+    }
+    .best{
+        width: 100px;
+        line-height: 40px;
+        color: white;
+        font-size: 20px;
+        background: #046cab;
+        text-align: center;
+        border-top-right-radius: 20px;
+    }
+
+
+}
+
